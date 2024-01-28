@@ -69,3 +69,6 @@ print(new_sentence)
 
 # list unpacking
 a, b, c, *other = [1, 2, 3, 4, 5, 6]
+print(a)
+print(c)
+print(other)
