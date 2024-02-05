@@ -57,13 +57,28 @@ class DoublyLinkedList:
         self.length -= 1
         return temp
 
+    def get(self, index):
+        if index<0 or index >= self.length:
+            return None
+        temp = self.head
+        if index < self.length/2:
+            for _ in range(index):
+                temp = temp.next
+        else:
+            temp = self.tail
+            for _ in range(self.length-1, index, -1):
+                temp = temp.prev
+        return temp.value
+
+
 
 my_linked_list = DoublyLinkedList(1)
 
 my_linked_list.append(2)
 my_linked_list.append(3)
 my_linked_list.prepend(6)
-
-my_linked_list.print_list()
-my_linked_list.pop_first()
-my_linked_list.print_list()
+#
+# my_linked_list.print_list()
+# my_linked_list.pop_first()
+# my_linked_list.print_list()
+print(my_linked_list.get(1))
