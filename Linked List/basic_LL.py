@@ -1,3 +1,5 @@
+# we need to add a data to a datastructure very quickly, but retrieval speed is not very important
+# Linked list is the best option to choose
 class Node:
     def __init__(self, value):
         self.value = value
