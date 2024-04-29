@@ -1,0 +1,14 @@
+def open_gift():
+    if ball:
+        return ball    =>   Base Case, where the function stops
+    else:
+        open_gift()    =>   Recursive Case
+
+
+If no base case, it will be infinite and it will be stack overflow
+Base Class should have the return statement not the print, otherwise the run statement will go to next line
+
+
+In Python, each time a function (recursive or otherwise) is called, a structure
+known as an activation record or frame is created to store information about
+the progress of that invocation of the function.
