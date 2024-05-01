@@ -3,6 +3,7 @@ class Node:
         self.value = value
         self.next = None
 
+
 class LinkedList:
     def __init__(self, value):
         new_node = Node(value)
@@ -52,5 +53,3 @@ my_linked_list.append(2)
 print(my_linked_list.pop())
 print(my_linked_list.pop())
 print(my_linked_list.pop())
-
-
