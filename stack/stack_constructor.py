@@ -1,3 +1,5 @@
+# this stack concept use last in first out (LIFO)
+
 class Node:
     def __init__(self, value):
         self.value = value
