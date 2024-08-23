@@ -39,3 +39,27 @@ class Solution:
                 stack.append(directory)
 
         return "/" + "/".join(stack)
+
+
+"""
+faster in run time  as they are using the continue
+class Solution:
+    def simplifyPath(self, path: str) -> str:
+        stack = []
+
+        toks = path.split("/")
+        
+        for tok in toks:
+            
+            if tok == "." or tok == "":
+                continue
+
+            if tok == "..":
+                if not stack:
+                    continue
+                stack.pop()
+                continue
+
+            stack.append(tok)
+        return '/' + '/'.join(stack)
+"""
