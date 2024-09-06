@@ -6,9 +6,10 @@ class Node:
 
 
 class BinarySearchTree:
-    def __init__(self):
-        self.root = None
+    def __init__(self, value):
+        new_node = Node(value)
+        self.root = new_node
 
 
-my_tree = BinarySearchTree()
-print(my_tree.root)
+my_tree = BinarySearchTree(4)
+print(my_tree.root.value)
