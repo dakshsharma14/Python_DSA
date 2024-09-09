@@ -4,6 +4,7 @@ class Solution:
         if len(pattern) != len(word):
             return False
 
+
         wordToChar = {}
         charToWord = {}
         for c, w in zip(pattern, word):
