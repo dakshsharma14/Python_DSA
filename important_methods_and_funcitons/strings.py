@@ -1,6 +1,9 @@
 '''
 convert the string to a  list or split
 list(nums)
+if the list is dtring
+this is very efficient that for loop and list(int(num))
+new_list = list(map(int, numbers))
 '''
 
 """
