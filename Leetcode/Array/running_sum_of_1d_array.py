@@ -9,3 +9,10 @@ class Solution:
             count = nums[i] + count
             new.append(count)
         return new
+
+
+'''
+class Solution:
+    def runningSum(self, nums: List[int]) -> List[int]:
+        return list(map(lambda x: x, accumulate(nums)))
+'''
